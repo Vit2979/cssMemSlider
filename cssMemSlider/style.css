@@ -39,7 +39,6 @@ article img{
 	width: 70px;
 }
 
-
 #switch1:checked ~ #controls label:nth-child(2), 
 #switch2:checked ~ #controls label:nth-child(3),
 #switch3:checked ~ #controls label:nth-child(4),
@@ -50,7 +49,6 @@ article img{
 	display: block;
 	height: 70px;
 	width: 70px;
-
 }
 
 label, a{
@@ -84,8 +82,6 @@ label, a{
 	height: 3vw;
 }
 
-
-
 #active label{ 
 	border-radius: 1vw; 
 	display: inline-block; 
@@ -113,11 +109,6 @@ label, a{
 	transform: scale(1.2);
   }
 
-
-
-
-
-
 #switch1:checked ~ #active label:nth-child(1),
 #switch2:checked ~ #active label:nth-child(2),
 #switch3:checked ~ #active label:nth-child(3),
@@ -132,8 +123,7 @@ label, a{
 }
 
 #controls label:hover{ 
-	opacity: 0.3;
-	
+	opacity: 0.3;	
 }
 
 #controls label{ 
@@ -141,9 +131,21 @@ label, a{
 }
 
 .text {
-color: #18a3dd;
-font-family: "Monotype Corsiva";
-font-size: 2vw;
+ color: #18a3dd;
+ font-family: "Monotype Corsiva";
+ letter-spacing: 1px;
+ font-size: 2vw;
+ text-align: left;
 }
-
-
+	
+@media screen and (min-width: 1279px) {
+ .text {
+ position: fixed;
+ margin-top:-6vw;	
+} 
+	
+#active{ 
+ text-align: right;
+ position: relative;
+ z-index: 99;
+}
