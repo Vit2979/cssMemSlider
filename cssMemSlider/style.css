@@ -1,4 +1,4 @@
-#page {
+#page { 
     position: relative;
 	text-align: center;   
 	margin: 0 auto;
@@ -27,18 +27,18 @@ article img{
 	max-width: 60vw; 
 }
 
-
 #switch1:checked ~ #controls label:nth-child(4), 
 #switch2:checked ~ #controls label:nth-child(1),
 #switch3:checked ~ #controls label:nth-child(2),
 #switch4:checked ~ #controls label:nth-child(3){
-	background: url('prev.png') no-repeat; 
+	background: url('prev.png') no-repeat;
 	float: left;
 	margin: 0 0 0 -80px; 
 	display: block;
 	height:70px;
 	width: 70px;
 }
+
 
 #switch1:checked ~ #controls label:nth-child(2), 
 #switch2:checked ~ #controls label:nth-child(3),
@@ -53,12 +53,12 @@ article img{
 
 }
 
-label, a{ 
+label, a{
 	cursor: pointer;
 	
 }
 
-.cover input{ 
+.cover input{
 	display: none;
 }
 
@@ -78,10 +78,6 @@ label, a{
 	margin-left: -300%;
 }
 
-#switch5:checked ~ #memes .image{
-	margin-left: -400%;
-}
-
 #controls{ 
 	margin: -25% 0 0 0;
 	width: 100%;
@@ -99,7 +95,7 @@ label, a{
 }
 
 #active{ 
-	margin: 25% 20% 20%;
+	margin: 25% 5% 5%;
 	text-align: center;
 }
 
@@ -117,11 +113,16 @@ label, a{
 	transform: scale(1.2);
   }
 
+
+
+
+
+
 #switch1:checked ~ #active label:nth-child(1),
 #switch2:checked ~ #active label:nth-child(2),
 #switch3:checked ~ #active label:nth-child(3),
-#switch4:checked ~ #active label:nth-child(4),
-#switch5:checked ~ #active label:nth-child(5){
+#switch4:checked ~ #active label:nth-child(4)
+{
 	background: #18a3dd;
 	border-color: #18a3dd !important;
 }
@@ -138,3 +139,11 @@ label, a{
 #controls label{ 
 	transition: opacity 0.2s ease-out;
 }
+
+.text {
+color: #18a3dd;
+font-family: "Monotype Corsiva";
+font-size: 2vw;
+}
+
+
